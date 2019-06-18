@@ -3,7 +3,6 @@ html:not(.mobile-view)  {
 /* баннер */
 .banner-toxu-t {
     margin-bottom: 20px;
-    border: 1px solid #eee;
 
 #banner-content-t {
 	background: url(https://toxu.ru/uploads/default/original/2X/5/545aaf22936a6b405548cee2676bc554a7d67d25.jpg);
@@ -23,7 +22,7 @@ a.kn:hover {background: rgba(0,0,0,0);border: solid 1px #f56400;color: #f56400;}
 }
 
 @media screen and (max-width : 1100px) {
-	.banner-toxu-t #banner-content-t h1{font-size: 30px;}
+	.banner-toxu-t #banner-content-t h1{font-size: 28px;}
 	.banner-toxu-t #banner-content-t p {font-size:14px;}
 } 	
 
@@ -83,6 +82,15 @@ a.info-soc.my  {
 a.info-soc.my:first-letter {
     color: #e45735;
 }
+.cat-link .topics-count {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+    margin-right: 6px;
+}	
+	
 }
 
 .telo-qa {
