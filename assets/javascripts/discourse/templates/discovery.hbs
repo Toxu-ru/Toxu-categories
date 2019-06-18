@@ -9,6 +9,7 @@
 
 <div class="blog-list tl-{{{currentUser.trust_level}}}">
 
+{{#if site.mobileView}} 1{{else}}2 {{/if}}
 {{#if siteSettings.sidebar_enable}}
   <div class="sidebar"> 
      {{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
