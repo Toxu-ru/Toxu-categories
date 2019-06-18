@@ -2,6 +2,16 @@
   {{discourse-banner user=currentUser banner=site.banner}}
 </div>
 
+<div class="blog-list tl-{{{currentUser.trust_level}}}">
+
+{{#if siteSettings.sidebar_enable}}
+  <div class="sidebar"> 
+     {{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
+  </div>
+{{/if}}
+
+<div class="telo-qa {{if currentUser.custom_fields.userbar_profile "other-no"}}">
+
 <div class="list-controls">
   <div class="container">
     {{outlet "navigation-bar"}}
@@ -9,12 +19,6 @@
 </div>
 
 {{conditional-loading-spinner condition=loading}}
-
-{{#if siteSettings.sidebar_enable}}
-  <div class="sidebar"> 
-     {{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
-  </div>
-{{/if}}
 
 <div class="container list-container {{if loading "hidden"}} {{if siteSettings.sidebar_enable "has-sidebar"}}">
   <div class="row">
@@ -33,6 +37,9 @@
       </div>
     </div>
   </div>
+</div>
+
+</div>
 </div>
 
 {{plugin-outlet name="discovery-below"}}
