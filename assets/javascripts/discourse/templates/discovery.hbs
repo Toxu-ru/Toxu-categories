@@ -2,8 +2,8 @@
   {{discourse-banner user=currentUser banner=site.banner}}
 </div>
 
-{{#if !currentUser}}
-{{mount-widget widget="toxu-banner-home"}}
+{{#if !currentUser}}{{else}}
+    {{mount-widget widget="toxu-banner-home"}}
 {{/if}}
 
 
