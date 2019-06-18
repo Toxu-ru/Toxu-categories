@@ -1,3 +1,5 @@
+html:not(.mobile-view)  {
+
 .sidebar {
     width: 180px;
     float: left;
@@ -54,10 +56,11 @@ a.info-soc.my:first-letter {
 }
 }
 
-.container.list-container.has-sidebar {
-    width: calc(100% - 183px);
+.telo-qa {
+    width: calc(100% - 233px);
     float: right;
-    border-left: 1px solid #d6d9dc;
+    background: #fff;
+    padding: 10px 10px 0 40px;
 }
 
 body.navigation-categories  {
@@ -65,7 +68,7 @@ body.navigation-categories  {
         display: none;
     }
 	
-    .container.list-container.has-sidebar {
+    .telo-qa {
         width:100%;
         border-left: none;
     }
@@ -79,8 +82,11 @@ body.navigation-categories  {
   .sidebar {
      display: none;
   }
- .container.list-container.has-sidebar {
+ .telo-qa {
      width: 100%;
      border-left: none;
   }
+}
+
+
 }
