@@ -1,8 +1,8 @@
-# name: discourse-sidebar-categories
+# name: Toxur-categories
 # about: design site Toxu.ru
 # version: 0.1
 # authors:  Evg
-# url: https://github.com/Toxuru/discourse-sidebar-categories
+# url: https://github.com/Toxu-ru/Toxu-categories
 
 register_asset "stylesheets/style.scss"
 
