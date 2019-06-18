@@ -1,6 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import { number } from 'discourse/lib/formatter';
+import RawHtml from 'discourse/widgets/raw-html';
 import { iconHTML } from "discourse-common/lib/icon-library";
 
 let icon_a = iconHTML('at');
@@ -83,17 +84,14 @@ export default createWidget('cat-categories', {
       categories.map(c => this.attach("cat-category", c))
     );
 
-        var uinfo;
-    if (this.currentUser) { 
-    var username = this.currentUser.get('username');
-    uinfo = ' — <a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
-    } else { uinfo = '  '; }  
+    var uinfo;
+        if (this.currentUser) { 
+        var username = this.currentUser.get('username');
+        uinfo = ' — <a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
+        } else { uinfo = '  '; }  
  
- 
- 
-  result = result.concat(
-       
- 
+   result = result.concat(
+  
       new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
       <div class="toxu-info-soc">
       <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
@@ -111,7 +109,6 @@ export default createWidget('cat-categories', {
       </div>
       ©  2019 «Toxu»  ${uinfo}
       </div>`}) 
-	   
 	   
      );
     
