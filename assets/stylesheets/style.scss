@@ -1,5 +1,34 @@
 html:not(.mobile-view)  {
 
+/* баннер */
+.banner-toxu-t {
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+
+#banner-content-t {
+	background: url(https://toxu.ru/uploads/default/original/2X/5/545aaf22936a6b405548cee2676bc554a7d67d25.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	text-align: center;
+}	
+
+h1 {font-weight: 700;color:#f56400;letter-spacing: 0;font-size: 34px;width: 60%;margin: 1px auto;line-height: 45px;}
+p {font-weight: 300;font-size: 16px;line-height: 150%;color: #667d99;width: 70%;margin: 5px auto;}
+a.kn {margin-top: 15px;margin-right: 15px;display: inline-block;border: solid 1px #0095ff;padding: 6px 11px;
+border-radius: 4px;text-transform: uppercase;font-weight: 600;font-size: 13px;line-height: 1.42857;color: #0095ff;}
+a.kn:hover {background: rgba(0,0,0,0);border: solid 1px #f56400;color: #f56400;}
+	
+}
+
+@media screen and (max-width : 1100px) {
+	.banner-toxu-t #banner-content-t h1{font-size: 30px;}
+	.banner-toxu-t #banner-content-t p {font-size:14px;}
+} 	
+
+	
+	
 .sidebar {
     width: 180px;
     float: left;
