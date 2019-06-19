@@ -1,5 +1,6 @@
 # Toxu - categories
 
+For your reference. We do not guarantee the operation of this plugin. This is a test version.
 
 ## How to Install this Plugin
 
