@@ -36,8 +36,18 @@ html:not(.mobile-view)  {
 .sidebar {
     width: 180px;
     float: left;
-    margin-top: 4px;
- 
+
+.badge-wrapper.bullet span.badge-category {
+    color: #667d99;
+}
+.badge-notification {
+	color: #f56400 !important;
+	background-color: transparent;
+	float:right;
+	font-size: 13px;
+	margin: 1px 0 0 0;
+}	
+	
 .cat-link .topics-count {
     float: right;
     font-weight: normal;
@@ -49,6 +59,7 @@ html:not(.mobile-view)  {
 	
 .badge-wrapper {
     font-weight: normal;
+    font-size: 13px;
 }
 .zag {
     margin: 3px 0 6px 0;
@@ -56,7 +67,7 @@ html:not(.mobile-view)  {
 .oglavl {
     display: inline-block;
     color: #919191;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     margin-bottom: 6px;
     text-transform: uppercase;
