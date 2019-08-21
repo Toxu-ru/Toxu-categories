@@ -4,7 +4,7 @@
 # authors:  Evg
 # url: https://github.com/Toxu-ru/Toxu-categories
 
-# register_asset "stylesheets/style.scss"
+register_asset "stylesheets/style.scss"
 
 after_initialize do
   
