@@ -1,8 +1,8 @@
-# name: Toxu-categories
+# name: toxu-categories
 # about: design site Toxu.ru
 # version: 0.1
 # authors:  Evg
-# url: https://github.com/Toxu-ru/Toxu-categories
+# url: https://github.com/Toxu-ru/toxu-categories
 
 register_asset "stylesheets/style.scss"
 
