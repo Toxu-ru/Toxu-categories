@@ -1,7 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import { number } from 'discourse/lib/formatter';
-import RawHtml from 'discourse/widgets/raw-html';\
+import RawHtml from 'discourse/widgets/raw-html';
 import Category from "discourse/models/category";
 
 createWidget('cat-category', {
