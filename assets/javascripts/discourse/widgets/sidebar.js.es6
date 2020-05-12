@@ -12,7 +12,7 @@ export default createWidget('sidebar', {
     const result = [];
     var self = this;
 
-		result.push(self.attach('sidebar-cat'));
+    result.push(self.attach('sidebar-cat'));
      
     return result;
   },
